@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 70%;
+    width: fit-content;
     margin: auto;
     margin-top: 20px;
     text-align: center;
@@ -44,10 +44,11 @@
 }
 
 img{
-    width: 50%;
+    width: 100%;
     box-sizing: content-box;
     vertical-align: middle;
     background-repeat: no-repeat;
+    
 }
 
 #icon{
@@ -68,21 +69,21 @@ img{
     background-color: black;
     /* border: 1px solid black;  */
     border-radius: 100%;
-    transition-duration: 0.6s;
+    transition-duration: 1s;
+    box-shadow: 0 0 0 5vw #333 inset;
 }
 
-#dx:hover{
+#dx:active{
     background-color:transparent;
-    border: 1px solid transparent; 
     border-radius: 100%;
-    transition-duration: 1s;
+    transition-duration: 0.1s;
     padding: 8px;
 }
 
-#sx:hover{
-    background-color: transparent;
-    border: 1px solid transparent; 
+#sx:active{
+    background-color:transparent;
     border-radius: 100%;
-    transition-duration: 1s;
+    transition-duration: 0.1s;
     padding: 8px;
 }
+

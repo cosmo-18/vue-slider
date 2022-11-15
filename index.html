@@ -18,34 +18,30 @@
     <div id="root">
       <!-- contenitore img principale e buttons  -->
         <div class="cont-1">
-            <svg id="sx" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+            <svg id="sx" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16" @click="beforeImg">
                 <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
               </svg>
-                <img :src="img1" alt="immagine-1">
-                <!-- <img :src="img2" alt="immagine-2">
-                <img :src="img3" alt="immagine-3">
-                <img :src="img4" alt="immagine-4">
-                <img :src="img5" alt="immagine-5"> -->
-              <svg id="dx" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <img :src="obj[indexImg].img" alt="immagini">
+              <svg id="dx" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"@click="nextImg">
                 <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
               </svg>
         </div>
         <!-- contenitore secondario img e slider -->
         <div class="cont-2">
             <div class="bord">
-                <img :src="img1" alt="immagine-1">
+                <img :src="obj[0].img" alt="immagine-1">
             </div>
             <div class="bord">
-                <img :src="img2" alt="immagine-2">
+                <img :src="obj[1].img" alt="immagine-2">
             </div>
             <div class="bord">
-                <img :src="img3" alt="immagine-3">
+                <img :src="obj[2].img" alt="immagine-3">
             </div>
             <div class="bord">
-                <img :src="img4" alt="immagine-4">
+                <img :src="obj[3].img" alt="immagine-4">
             </div>
             <div class="bord">
-                <img :src="img5" alt="immagine-5">
+                <img :src="obj[4].img" alt="immagine-5">
             </div>
         </div>
         <!-- elenco puntinato terziario delle img -->
